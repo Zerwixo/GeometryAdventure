@@ -1,0 +1,88 @@
+/* Réinitialisation des marges et des rembourrages */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mise en page de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2 %;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0; /* Réinitialise toutes les marges */
+}
+
+nav {
+    margin-top: 3%; /* Ajustez la marge supérieure en pourcentage */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 2%; /* Ajustez la marge horizontale en pourcentage */
+}
+
+main {
+    max-width: 90%; /* Ajustez la largeur maximale en pourcentage */
+    margin: 2% auto; /* Ajustez la marge en pourcentage */
+    padding: 2%; /* Ajustez le padding en pourcentage */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1% rgba(0, 0, 0, 0.1); /* Ajustez la taille de l'ombre en pourcentage */
+}
+
+h1, h2 {
+    margin-bottom: 2%; /* Ajustez la marge inférieure en pourcentage */
+}
+
+.icon {
+    width: 4%; /* Ajustez la largeur de l'icône en pourcentage */
+    height: auto;
+	float: left;
+	margin-left: 1%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2% auto; /* Ajustez la marge en pourcentage */
+}
+
+/* Met en page le contenu principal */
+main {
+    flex: 1; /* Permet au contenu de prendre tout l'espace vertical restant */
+}
+
+/* Met en page le footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2vw;
+    position: sticky;
+    margin-bottom: 0%; /* Colle le footer au bas de l'écran */
+}
+
+
+
+/* Réactivité basique */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 2%; /* Ajustez le padding en pourcentage */
+    }
+}
